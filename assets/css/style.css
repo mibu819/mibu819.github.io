@@ -1,13 +1,10 @@
 
-* {box-sizing: border-box;}
-
 body { 
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   background-image: url(../images/pattern.png)
 }
-
 
 
 .header {
@@ -54,26 +51,10 @@ body {
     background-color: #4aaaa5;
     text-align: center;
   }
-.wrapper {
-    float: center;
-    width: 960px;
-    padding: 20px;
-    margin-top: 20px;
-    margin-left: 160px;
-    margin-right: 160px;
-    background: #ffffff;
-}
 
-img {
+img{
     float: left;
-    padding:10px;
 }
-
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-* {box-sizing: border-box;}
 
 input[type=text], select, textarea {
     width: 100%;
@@ -99,15 +80,81 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-.container {
+/*.container {
     border-radius: 5px;
     background-color: #ffffff;
     padding: 20px;
     margin-top: 20px;
     margin-left: 160px;
     margin-right: 160px;
-}
+}*/
 .hrcolor{
     color: #4aaaa5
+}
+
+
+/*Portfolio page css*/
+
+.container{
+    position: absolute;
+    padding: 20px;
+    margin: auto;
+    overflow: auto;
+    top: 12%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 960px;
+    height: auto;
+    background-color:white;
+    border-radius: 3px;
+}
+
+.box-set{
+    position: relative;
+    float: left;
+    margin: auto;
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    width: 75%;
+
+}
+
+.box1{
+    position: relative;
+    float: left;
+    margin-top: 5%;
+    background-color: antiquewhite;
+}
+.box2{
+    position: relative;
+    float: left;
+   
+    margin-left: 10%;
+   margin-top: 5%;
+}
+.box3{
+    position: relative;
+    float: left;
+    margin-top: 5%;
+}
+.box4{
+    position: relative;
+    float: left;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.box5{
+    position: relative;
+    float: left;
+    margin-top: 5%;
+}
+.caption{
+    position: absolute;
+    width: 100%;
+    bottom: 20%;
+    background-color: aquamarine;
+    text-align: center;
 }
 
