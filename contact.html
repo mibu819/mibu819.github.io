@@ -1,47 +1,63 @@
 <!DOCTYPE html>
-<html lang="en-us">
+
+<html lang="en”>
 
 <head>
-  <meta charset="UTF-8">
-  <title>Basic Portfoio</title>
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <title>Basic Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
 </head>
-<div class="header">
-    <div class="navbar">
-    <nav class="header-left">
-    <a href="./index.html" class="name">Maha Abudouwaili</a>
-    </nav>
-    <nav class="header-right">
-        <a href="./index.html">About    |</a>  <!-- how to make | in between? -->
-        <a href="./portfolio.html">Portfolio  |</a>
-        <a href="./contact.html">Contact</a>
-    </nav>
+<body>
+
+<div class="row" id="header">
+
+    <div class="col-4" id="brand">
+        <h1>Maha A.</h1>
+    </div>
+
+    <div class="col-8" id="nav">
+        <a href="index.html"><span>About</span></a>
+        <span>|</span>
+        <a href="contact.html"><span>Contact</span></a>
+        <span>|</span>
+        <a href="portfolio.html"><span>Portfolio</span></a>
     </div>
 </div>
 
-<div class="container">
-    <div center>
-        <h1>Contact</h1>
-        <hr class="hrcolor">
-        <form action="action_page.php">
-      
-        <label for="fname">Name</label>
-          <input type="text" id="fname" name="name" placeholder="Your name..">
-      
-          <label for="email">Email</label>
-          <input type="text" id="email" name="Email" placeholder="Your email address..">
-      
+<div class="row">
+    <div class="col-8">
+        <div id="contact">
+            <h2>Contact</h2>
+            <hr>
+			<form action="#">
+                <span>Name</span><br>
+                <input id="name" type="text" name="name" value="John Smith">
+                <br>
+                <span>Email</span><br>
+                <input id="email" type="text" name="email" value="example@gmail.com">
+                <br>
+                <span>Message</span><br>
+                <input id="message" type="text">
+                <br>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
 
-      
-          <label for="Message">Message</label>
-          <textarea id="Message" name="Message" placeholder="Write something.." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-        </form>
-    </div>
+
 </div>
-<footer class="footer">
-    <div class="footerContainer">
-        <p class="copyright">Copyright©</p>
-    </div>
-</footer>
+
+<div class="row">
+    <div class="col-12" id="footer">
+        <p>&copy Copyright 2017 Fred Lintz</p>
+    </div> 
+ </div> 
+
+</body>
+</html>

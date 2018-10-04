@@ -1,171 +1,303 @@
-
-body { 
-  margin: 0;
-  background-image: url(../images/pattern.png)
-}
-
-
-.header {
-  display:block;
-  overflow: hidden;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  font-family: Georgia, 'Times New Roman', Times, serif
-}
-
-.navbar{
-    max-width: 960px;
-    margin: auto;
-    top: 0;
-    right: 0;
-    left: 0;  
-}
-
-.header a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px; 
-  line-height: 25px;
-  border-radius: 4px;
-}
-
-
-.header a.name {
-  font-size: 24pt;
-  font-weight: bold;
-  color: white;
-  padding:20px;
-
-}
-
-.header-right {
-  float: right;
-}
-.header-left {
-    float: left;
-    background-color: #4aaaa5;
-    text-align: center;
-  }
-
-img{
-    float: left;
-}
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+/***************************************
+	  Shared CSS across Entire Site
+****************************************/
+* {
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+    text-decoration: none;
 }
 
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-
-.hrcolor{
-    color: #4aaaa5
-}
-
-
-/*Portfolio page css*/
-
-.container{
-    position: absolute;
-    padding: 20px;
-    margin: auto;
-    overflow: auto;
-    top: 12%;
-    right: 0;
-    left: 0;
-    max-width: 960px;
-    background-color:white;
-    border-radius: 3px;
-}
-
-.box-set{
-    position: relative;
+[class*="col-"] {
     float: left;
-    margin: auto;
-    top: 0%;
-    right: 0;
-    bottom: 0;
-    width: 75%;
+    /*border: 1px solid red;*/
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+a {
+	color: #777777;
+	text-decoration: none;
+}
+a:visited {
+	color: #777777;
+}
+
+a:hover {
+	color: #4c4b4b;
+}
+
+body {
+	position: relative;
+	max-width: 960px;
+	height: 800px;
+	background-image: url("../images/concrete-texture.png");
+	margin: auto;
+}
+
+#header {
+	background: #fff;
+	height: 70px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #777777;
+	border-bottom: 2px solid #cccccc;
+}
+
+#brand {
+	height: 70px;
+}
+
+#brand h1 {
+	width: 210px;
+	padding: 17px;
+	margin: 0px 0px 0px 40px;
+	font-size: 2.2em;
+	background: #4aaaa5;
+	text-align: center;
+	color: #fff;
+}
+
+#nav {
+	height: 70px;
+	padding-right: 50px;
+	text-align: right;
+	line-height: 70px;
+}
+
+#nav span {
+	padding: 5px;
+	font-size: 1.05em;
+}
+
+#connect {
+	background: #fff;
+	color: #4aaaa5;
+	text-align: center;
+	font-size: 1.4em;
+	margin: 35px 35px 15px 15px;
+	padding: 15px;
+}
+
+#connect h3 {
+	font-weight: bold;
+	margin-bottom: 14px;
+}
+
+#connect img {
+	margin:	5px 2px 0px 2px;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0px;
+	background: #666666;
+	height: 70px;
+	text-align: center;
+	line-height: 70px;
+	color: #fff;
+	border-top: 2px solid #4aaaa5;
 
 }
 
-.box1{
-    position: relative;
-    float: left;
-    margin-top: 5%;
-    background-color: antiquewhite;
-}
-.box2{
-    position: relative;
-    float: left;
-   
-    margin-left: 10%;
-   margin-top: 5%;
-}
-.box3{
-    position: relative;
-    float: left;
-    margin-top: 5%;
-}
-.box4{
-    position: relative;
-    float: left;
-    margin-top: 5%;
-    margin-left: 10%;
-}
-.box5{
-    position: relative;
-    float: left;
-    margin-top: 5%;
-}
-.caption{
-    position: absolute;
-    width: 100%;
-    bottom: 10%;
-    background-color: #4aaaa5;
-    text-align: center;
-    color:white;
-    font-size: 16pt;
+/***************************************
+		       INDEX.HTML
+****************************************/
+
+#about {
+	background: #fff;
+	height: 370px;
+	margin: 35px 15px 15px 35px;
+	padding: 15px;
+	overflow: auto;
 }
 
-/*-------Footer--------*/
-footer.footer {
-    position:fixed;
-    bottom:0;
-    width:100%;
-    height:30px;   /* Height of the footer */
-    background:darkgray;
+#about h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0px 0px 5px 15px;
+	color: #4aaaa5;
 }
 
-p.copyright {
-    color: #fff;
-    line-height: 20px;
-    font-size: 0.7em;
-    text-align: center;
+#about hr {
+	margin-left: 15px;
+	margin-right: 15px;
 }
 
-.h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color:#4aaaa5;
+#about img {
+	float: left;
+	margin: 15px 15px 0px 15px;
+	
 }
+
+#about p {
+	line-height: 150%;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-top: 10px;
+	text-align: justify; 
+
+}
+
+/***************************************
+		      PORTFOLIO.HTML
+****************************************/
+
+#portfolio {
+	background: #fff;
+	height: 590px;
+	margin: 35px 15px 15px 35px;
+	padding: 15px;
+	overflow: auto;
+
+}
+
+#portfolio h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0px 0px 5px 15px;
+	color: #4aaaa5;
+}
+
+#portfolio hr {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+#portfolio li {
+	width: 45%;
+	height: 150px;
+	margin: 10px 0px 10px 3.2%;
+	float: left;
+}
+
+#portfolio img {
+	width: 100%;
+	height: 100%;
+}
+
+.portLabel {
+	color: #fff;
+	background-color: #4aaaa5;
+	line-height: 40px;
+	text-align: center;
+	position: relative;
+	bottom: 53px;
+
+}
+
+/***************************************
+		      CONTACT.HTML
+****************************************/
+
+#contact {
+	background: #fff;
+	height: 450px;
+	margin: 35px 15px 15px 35px;
+	padding: 15px;
+	overflow: auto;
+}
+
+#contact h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0px 0px 5px 15px;
+	color: #4aaaa5;
+}
+
+#contact hr {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+#contact form {
+	margin-left: 15px;
+	color: #777777;
+}
+
+#contact form input {
+	color: #777777;
+	width: 97%;
+	margin-bottom: 10px;
+	margin-top: 3px;
+}
+
+#contact span {
+	font-size: 1.1em;
+}
+
+#name {
+	height: 30px;
+	margin-bottom: 5px;
+}
+
+#name[type=text] {
+	padding-left: 5px;
+	font-size: 13px; 
+	opacity: 0.7;
+}
+
+#email[type=text] {
+	padding-left: 5px; 
+	font-size: 13px;
+	opacity: 0.7;
+}
+
+#message[type=text] {
+	line-height: 0px;
+}
+
+#email {
+	height: 30px;
+	margin-bottom: 5px;	
+}
+
+#message {
+	height: 185px;
+	margin-bottom: 10px;
+	
+}
+
+#submit[type=submit] {
+	color: #fff;
+	width: 70px;
+ 	height: 30px;
+ 	background: #4aaaa5;
+ 	border: none;
+ 	margin-top: 5px;
+ 	border-radius: 2px;
+ 	font-size: 13px;
+}
+
+#submit:hover {
+	cursor: pointer;
+	background-color: #3a8783;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
